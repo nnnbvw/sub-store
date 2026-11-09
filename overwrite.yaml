@@ -78,12 +78,10 @@ dns:
     - 223.5.5.5                                                   
     - 114.114.114.114
   nameserver:
+    - 223.5.5.5
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
-    - 223.5.5.5
-  proxy-server-nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
+
 proxy-groups:
   - {name: 一键代理, type: select, include-all: true, proxies: [香港节点, 日本节点, 马来西亚节点, 韩国节点, 新加坡节点, 美国节点,  其他手动, DIRECT, REJECT], icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Rocket.png}
   - {name: YouTube,   <<: *Anchor_OB, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/YouTube.png}
