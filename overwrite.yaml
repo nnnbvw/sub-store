@@ -76,7 +76,7 @@ dns:
     - "rule-set:cn_domain"
   default-nameserver:
     - 223.5.5.5                                                   
-    - 219.141.136.10
+    - 114.114.114.114
   nameserver:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
