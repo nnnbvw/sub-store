@@ -75,8 +75,8 @@ dns:
     - '*.lan'
     - "rule-set:cn_domain"
   default-nameserver:
-    - 219.141.136.10                                                   
-    - 219.141.140.10
+    - 223.5.5.5                                                   
+    - 219.141.136.10
   nameserver:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
