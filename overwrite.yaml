@@ -29,7 +29,7 @@ external-ui-name: zashboard
 external-ui: ui
 external-controller: 0.0.0.0:9090
 secret: ""
-external-ui-url: https://github.com/Zephyruso/zashboard/releases/latest/download/dist-no-fonts.zip
+external-ui-url: https://gh-proxy.com/https://github.com/Zephyruso/zashboard/releases/latest/download/dist-no-fonts.zip
 tun:
   enable: true
   stack: system
