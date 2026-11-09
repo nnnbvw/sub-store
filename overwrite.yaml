@@ -80,6 +80,9 @@ dns:
   nameserver:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
+  proxy-server-nameserver:
+    - 223.5.5.5
+    - 114.114.114.114
 proxy-groups:
   - {name: 一键代理, type: select, include-all: true, proxies: [香港节点, 日本节点, 马来西亚节点, 韩国节点, 新加坡节点, 美国节点,  其他手动, DIRECT, REJECT], icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Rocket.png}
   - {name: YouTube,   <<: *Anchor_OB, icon: https://github.com/Seven1echo/Yaml/raw/main/icons/YouTube.png}
@@ -193,7 +196,7 @@ rule-providers:
   microsoft_domain:  { <<: *Anchor_DN, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs"}
   appletv_domain:    { <<: *Anchor_DN, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-tvplus.mrs"}
   apple_domain:      { <<: *Anchor_DN, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple.mrs"}
-  apple_ai:          { <<: *Anchor_CL, url: "https://raw.githubusercontent.com/nnnbvw/apple-ai/refs/heads/main/appleai.list"}
+  apple_ai:          { <<: *Anchor_CL, url: "https://raw.githubusercontent.com/nnnbvw/apple-ai/refs/heads/main/appleai.yaml"}
   tiktok_domain:     { <<: *Anchor_DN, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs"}
   twitter_domain:    { <<: *Anchor_DN, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/twitter.mrs"}
   telegram_domain:   { <<: *Anchor_DN, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"}
@@ -201,8 +204,8 @@ rule-providers:
   disney_domain:     { <<: *Anchor_DN, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/disney.mrs"}
   spotify_domain:    { <<: *Anchor_DN, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/spotify.mrs"}
   paypal_domain:     { <<: *Anchor_DN, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/paypal.mrs"}
-  bybit_domain:      { <<: *Anchor_CL, url: "https://raw.githubusercontent.com/nnnbvw/bybit/main/Bybit.list"}
-  gemini_domain:     { <<: *Anchor_CL, url: "https://raw.githubusercontent.com/nnnbvw/gemini/main/gemini.list"}
+  bybit_domain:      { <<: *Anchor_CL, url: "https://raw.githubusercontent.com/nnnbvw/bybit/main/Bybit.yaml"}
+  gemini_domain:     { <<: *Anchor_CL, url: "https://raw.githubusercontent.com/nnnbvw/gemini/main/gemini.yaml"}
   geolocation-!cn:   { <<: *Anchor_DN, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"}
   cn_domain:         { <<: *Anchor_DN, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"}
   apple_ip:          { <<: *Anchor_IP, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo-lite/geoip/apple.mrs"}
